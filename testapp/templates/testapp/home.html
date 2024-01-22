@@ -1,0 +1,15 @@
+{% extends 'testapp/base.html'%}
+
+{% block content %}
+
+<h1 style="color: blue; align-items: center;" > Welcome to Homepage. </h1>
+
+<div class=" jumbotron" style="align-items: center;">
+    <a href="{% url 'login_user' %}"><button class="btn btn-primary"> login</button></a>
+
+<p>New to the Website ? </p>
+
+<a href="{% url 'register' %}"> <button class="btn btn-secondary"> Register</button></a>
+</div>
+
+{% endblock %}

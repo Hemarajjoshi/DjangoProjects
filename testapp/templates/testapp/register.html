@@ -1,0 +1,10 @@
+{% extends 'testapp/base.html' %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{register_form}}
+    <input type="submit" value="Register">
+</form>
+
+{% endblock %}
