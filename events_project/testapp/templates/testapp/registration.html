@@ -1,0 +1,46 @@
+{% extends 'testapp/base.html'%}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css"> </head>
+<body>
+    {% for msg in messages %}
+    {{msg}}
+    {% endfor %}
+
+    <div class="description"> </div>
+    <div class="login-form">
+      <h1>REGISTRATION FORM</h1>
+      <form method="POST" >
+        {% csrf_token%}
+        <label for="username">Username:</label>
+            {{form.username}}
+        <!-- <input type="text" id="username" name="username"> -->
+
+        <label for="email">Email address:</label>
+            {{form.email}}
+        <!-- <input type="email" id="email" name="email"> -->
+
+        <label for="password">Password:</label>
+         {{form.password1}}
+        <!-- <input type="password" id="password" name="password"> -->
+
+         <label for="password2">Confirm Password:</label>
+         {{form.password2}}
+        <!-- <input type="password" id="password" name="password" -->
+     
+        <button type="submit">REGISTER</button>
+
+        <a href="{%url 'home'%}">Already have a account</a>
+  
+        
+      </form>
+    </div>
+
+</body>
+</html>
+{% endblock %}

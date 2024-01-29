@@ -1,0 +1,48 @@
+/* style.css */
+body {
+    /* Set background image here */
+    background-image: url("path/to/your/night_sky_image.jpg"); /* Replace with the path to your image */
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  
+  .login-form {
+    /* Position and style the form elements as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity for desired effect */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Adjust color as needed */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
